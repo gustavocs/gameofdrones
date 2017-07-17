@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameOfDrones.API", "GameOfDrones.API\GameOfDrones.API.csproj", "{63E32CAE-CB27-46E5-94D9-080A68AEA5F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameOfDrones.Data", "GameOfDrones.Data\GameOfDrones.Data.csproj", "{33332935-CAAE-45AD-82A2-855B740936F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameOfDrones.Models", "GameOfDrones.Models\GameOfDrones.Models.csproj", "{90104CB4-F342-450B-B5FD-61AE87CBFC5E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{4966E611-4E57-4F01-84EC-A80C94DED31C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameOfDrones.Services", "GameOfDrones.Services\GameOfDrones.Services.csproj", "{7B3551C1-75D0-47E6-90FF-E96C9B875618}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameOfDrones.Web", "GameOfDrones.Web\GameOfDrones.Web.csproj", "{556E0C6A-3CFB-48A6-856D-DC3CFFE528BA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{63E32CAE-CB27-46E5-94D9-080A68AEA5F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63E32CAE-CB27-46E5-94D9-080A68AEA5F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63E32CAE-CB27-46E5-94D9-080A68AEA5F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63E32CAE-CB27-46E5-94D9-080A68AEA5F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33332935-CAAE-45AD-82A2-855B740936F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33332935-CAAE-45AD-82A2-855B740936F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33332935-CAAE-45AD-82A2-855B740936F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33332935-CAAE-45AD-82A2-855B740936F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90104CB4-F342-450B-B5FD-61AE87CBFC5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90104CB4-F342-450B-B5FD-61AE87CBFC5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90104CB4-F342-450B-B5FD-61AE87CBFC5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90104CB4-F342-450B-B5FD-61AE87CBFC5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B3551C1-75D0-47E6-90FF-E96C9B875618}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B3551C1-75D0-47E6-90FF-E96C9B875618}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B3551C1-75D0-47E6-90FF-E96C9B875618}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B3551C1-75D0-47E6-90FF-E96C9B875618}.Release|Any CPU.Build.0 = Release|Any CPU
+		{556E0C6A-3CFB-48A6-856D-DC3CFFE528BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{556E0C6A-3CFB-48A6-856D-DC3CFFE528BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{556E0C6A-3CFB-48A6-856D-DC3CFFE528BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{556E0C6A-3CFB-48A6-856D-DC3CFFE528BA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{33332935-CAAE-45AD-82A2-855B740936F3} = {4966E611-4E57-4F01-84EC-A80C94DED31C}
+		{90104CB4-F342-450B-B5FD-61AE87CBFC5E} = {4966E611-4E57-4F01-84EC-A80C94DED31C}
+		{7B3551C1-75D0-47E6-90FF-E96C9B875618} = {4966E611-4E57-4F01-84EC-A80C94DED31C}
+	EndGlobalSection
+EndGlobal

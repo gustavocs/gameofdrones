@@ -1,0 +1,47 @@
+﻿
+<form name="gameForm" class="form ng-pristine ng-valid" role="form" ng-submit="newGame()" novalidate>
+    <h3 class="page-header">
+        Enter players name:
+    </h3>
+    <div class="row">
+        <div class="col-md-2"><label>Player 1:</label></div>
+        <div class="col-md-4">
+            <div class="form-group" ng-class="{ 'has-error': gameForm.player1name.$touched && gameForm.player1name.$invalid }">
+                <input name="player1name" type="text" class="form-control" ng-model="player1name" required ng-minlength="3" />
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="help-block" ng-messages="gameForm.player1name.$error" ng-if="gameForm.player1name.$touched">
+                <p ng-message="required">
+                    Player 1 must have a name!
+                </p>
+                <p ng-message="minlength">
+                    Player 1 name must have at least 3 characters.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2"><label>Player 2:</label></div>
+        <div class="col-md-4">
+            <div class="form-group" ng-class="{ 'has-error': gameForm.player1name.$touched && gameForm.player1name.$invalid }">
+                <input name="player2name" type="text" class="form-control" ng-model="player2name" required ng-minlength="3" />
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="help-block" ng-messages="gameForm.player2name.$error" ng-if="gameForm.player2name.$touched">
+                <p ng-message="required">
+                    Player 2 must have a name!
+                </p>
+                <p ng-message="minlength">
+                    Player 2 name must have at least 3 characters.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 text-right" >
+            <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+        </div>
+    </div>
+</form>

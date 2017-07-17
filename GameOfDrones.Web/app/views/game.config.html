@@ -1,0 +1,35 @@
+﻿<div style="padding: 10px 10px 20px 10px;">
+    <h3>Game configuration</h3>
+    <hr />
+    <div class="row">
+        <div class="col-md-3"><label>Win limit:</label></div>
+        <div class="col-md-3">
+            {{config.WinLimit}}
+        </div>
+    </div>
+    <hr />
+    <div class="row" ng-repeat="move in config.Moves track by move.MoveId">
+        <div class="col-md-3"><label>Move:</label></div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <input type="text" name="move.Name" class="form-control" ng-model="move.Name" />
+            </div>
+        </div>
+        <div class="col-md-1"><label>kills</label></div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <select name="move.Kills" class="form-control" ng-model="move.Kills" ng-options="v as v.Name for v in config.Moves track by v.MoveId">
+                 </select>
+            </div>
+        </div>
+        <div class="col-md-2 text-left">
+            <button type="button" class="btn" ng-click="removeMove(move.MoveId)">X</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 text-right">
+            <button type="submit" class="btn btn-primary" ng-click="addMove()">Add move</button>
+            <button type="submit" class="btn btn-success" ng-click="updateMoves(true)">Save</button>
+        </div>
+    </div>
+</div>

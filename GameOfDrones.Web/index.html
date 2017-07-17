@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html ng-app="gameOfDrones">
+<head>
+    <link href="/Content/bootstrap.css" rel="stylesheet" />
+    <link href="/Content/ui-bootstrap-csp.css" rel="stylesheet" />
+    <title></title>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#" ui-sref="game.new">Game of Drones</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a ui-sref="game.new" href="#">New game</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Page Content -->
+    <div class="container">
+        <div class="row">
+            <ui-view></ui-view>
+        </div>
+        <hr>
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; gustavoc 2016</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Tools -->
+    <script src="/app/util/util.js"></script>
+
+    <!-- Angular and modules -->
+    <script src="/Scripts/angular.min.js"></script>
+    <script src="/Scripts/angular-resource.min.js"></script>
+    <script src="/Scripts/angular-ui/ui-bootstrap-tpls.js"></script>
+    <script src="/Scripts/angular-ui-router.min.js"></script>
+    <script src="/Scripts/lodash.min.js"></script>
+    <script src="/Scripts/restangular.min.js"></script>
+    <script src="/Scripts/angular-messages.min.js"></script>
+
+    <!-- Script app.js -->
+    <script src="/app/app.js"></script>
+    <script src="/app/appConfig.js"></script>
+    <script src="/app/apiConfig.js"></script>
+
+    <!-- Controllers and registering -->
+    <script src="/app/controllers/mainController.js"></script>
+    <script src="/app/controllers/roundController.js"></script>
+    <script src="/app/controllers/winnerController.js"></script>
+    <script src="/app/controllers/configController.js"></script>
+    <script src="/app/controllers/gameController.js"></script>
+    <script src="/app/controllers.js"></script>
+    
+</body>
+
+
+</html>

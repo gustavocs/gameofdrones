@@ -1,0 +1,31 @@
+﻿
+<div class="page-header">
+    <h2>Game of Drones</h2>
+</div>
+
+<div class="row">
+    <div class="col-md-8">
+        <ui-view></ui-view>
+    </div>
+    <div class="col-md-4">
+        <div ng-view="gameDetails" class="well">
+            
+            <h4>
+                Current game
+            </h4>
+            <table class="table-condensed">
+                <tr>
+                    <th>Round</th>
+                    <th>Winner</th>
+                </tr>
+                <tr ng-repeat="round in game.Rounds">
+                    <td>{{$index+1}}</td>
+                    <td>{{ round.Winner.Name }}</td>
+                </tr>
+            </table>
+            <hr />
+            <a href="javascript:void(0)" ng-click="openConfig()" class="right">Configuration</a>
+            
+        </div>
+    </div>
+</div>
